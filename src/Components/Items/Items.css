@@ -1,0 +1,21 @@
+.itemcontainer{
+    width:250px;
+    /* height: 250px; */
+}
+.itemcontainer p{
+    margin:6px 0px;
+}
+.item-price{
+    display:flex;
+    gap:20px;
+}
+.item-price-new{
+    color:#374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+.item-price-old{
+    color:#374151;
+    font-size: 18px;
+    font-weight: 600;
+}
