@@ -12,20 +12,23 @@
 }
 .shopcategory-sort{
     
-    padding:10px 20px;
+    padding:10px;
     border-radius:40px;
     border:1px solid #888;
     margin-top: 15px;
     font-size: 18px;
+    outline:none;
+  
 
 }
-.shopcategory-sort img{
+
+/* .shopcategory-sort img{
     width:12px;
     position:relative;
     top:3px;
     left:5px;
 
-}
+} */
 .shopcategory-indexsort p span{
     font-weight: 900;
     font-size: 18px;

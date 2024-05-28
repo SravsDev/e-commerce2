@@ -1,15 +1,34 @@
 import React,{useContext ,useState} from 'react'
 import "./CSS/Shopcategory.css"
 import { Shopcontext } from '../Content/Shopcontext'
-import dropdown from "../Components/Assets/dropdown.png"
+// import dropdown from "../Components/Assets/dropdown.png"
 import Items from '../Components/Items/Items'
 import search from "../Components/Assets/search.png"
 
 
 const Shopcategory = (props) => {
   const [searchitem , setSearchitem]=useState('');
+  const [sortprice , setSortprice]=useState();
  
-   const {all_products}=useContext(Shopcontext)
+   const {all_products}=useContext(Shopcontext);
+  //  const price=props.new_price;
+
+  function handlechangefilter(e){
+    setSortprice(e.target.value);
+
+  }
+  
+   function handlesort(a,b){
+    if(sortprice==="htol"){
+      return b.new_price-a.new_price;
+    }
+    if(sortprice==="ltoh"){
+      return a.new_price-b.new_price;
+    }
+
+   
+   }
+
   return (
     <div className="shopcategory">
       <img  className="shopcategorybanner"src={props.banner}  alt="Loading" />
@@ -22,14 +41,25 @@ const Shopcategory = (props) => {
           <span><img src={search} alt="Loading" /></span>
 
         </div>
-        <div className="shopcategory-sort">
-          sort by <img  src={dropdown} alt="Loading"/>
+        <div >
+          <select className="shopcategory-sort" onChange={handlechangefilter}>
+            
+
+            <option>Sort By</option>
+            <option value="htol">High to low</option>
+            <option value="ltoh">Low to high</option>
+          </select>
+          
+          {/* <img  src={dropdown} alt="Loading"/> */}
         </div>
        
      </div>
      <div className="shopcategory-products">
       {
-        all_products.filter(p=>p.name.toLowerCase().includes(searchitem.toLowerCase())).map((item,i)=>{
+        all_products
+        .sort(handlesort)
+        .filter(p=>p.name.toLowerCase().includes(searchitem.toLowerCase()))
+        .map((item,i)=>{
         if(props.category===item.category){
           return <Items className="shopcategory-card" key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
         

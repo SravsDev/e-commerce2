@@ -9,8 +9,8 @@
     gap:30px;
     padding:  100px;
      margin:auto; 
-    background: linear-gradient(180deg, #fde1ff 0%, #acbbab22 60% );
-
+    /* background: linear-gradient(180deg, #fde1ff 0%, #acbbab22 60% ); */
+    background:#50505022 ;
 
 }
 .newsletter h1{
