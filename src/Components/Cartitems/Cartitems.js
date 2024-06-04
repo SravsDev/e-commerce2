@@ -1,10 +1,12 @@
-import React ,{useContext}from 'react'
+import React ,{useContext }from 'react'
 import "./Cartitems.css"
 import { Shopcontext } from '../../Content/Shopcontext'
 import removeicon from "../Assets/removeicon.png"
 
 const Cartitems = () => {
-    const {all_products,cartitems, removefromcart,getTotalcartamount}=useContext(Shopcontext)
+    const {all_products,cartitems, removefromcart,getTotalcartamount,addcount,minuscount}=useContext(Shopcontext)
+
+ 
 
   return (
     <div className="cartitems">
@@ -26,7 +28,15 @@ const Cartitems = () => {
             <img className="carticon-producticon" src={e.image} alt="Loading" />
             <p>{e.name}</p>
             <p>{e.new_price}</p>
-            <button className="cartitems-quantity">{cartitems[e.id]}</button>
+            {/* <button className="cartitems-quantity"><span>+</span>{cartitems[e.id]} <span>-</span></button> */}
+            <div className="cartitems-quantity">
+                 <button onClick={()=>{minuscount(e.id)}}>-</button>
+
+                <button>{cartitems[e.id]}</button>
+                
+                <button onClick={()=>{addcount(e.id)}}>+</button>
+            </div>
+
             <p>{e.new_price*cartitems[e.id]}</p>
             <img className="cartitems-removeicon" src={removeicon} onClick={()=>{removefromcart(e.id)}} style={{width:"20px"}} alt="Loading" />
 

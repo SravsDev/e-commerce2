@@ -16,15 +16,55 @@ const Shopcontextprovider=(props)=>{
 
     const [cartitems,setCartitems]=useState(getDefaultcart());
 
-   
-
     const addtocart=(itemsid)=>{
-        setCartitems((prev)=>({...prev,[itemsid]:prev[itemsid]+1}))
+        setCartitems((prev)=>({...prev,[itemsid]:prev[itemsid]? prev[itemsid] : prev[itemsid]+1}))
     }
+    
+    
+    
+
+    const addcount=(itemsid)=>{
+        setCartitems((prev)=>({...prev, [itemsid]:prev[itemsid]+1}))
+       
+    }
+
+
+
+    const minuscount=(itemsid)=>{
+            setCartitems((prev)=>({...prev, [itemsid]:prev[itemsid]>1 ? prev[itemsid]-1 : 1 } ))
+           
+         }
+
+
+
+    // const minuscount=(itemsid)=>{
+    //     setCartitems((prev)=>({...prev, [itemsid]:{ [itemsid]:prev[itemsid] > 0 ?prev[itemsid]-1 : 0} } ))
+       
+    // }
+    
+    
+    // const minuscount=(itemsid)=>{
+    //     const count=cartitems.map((item.index)=>{
+
+    //         return [itemsid]===index?{...item, quantity:item.quantity>0?item.quantity-1:0} :item
+    //     })
+    //     setCartitems(count);
+
+    // }
+
+
 
     const removefromcart=(itemsid)=>{
-        setCartitems((prev)=>({...prev,[itemsid]:prev[itemsid]-1}))
+        
+        setCartitems((prev)=>({...prev, [itemsid]:prev[itemsid]===""}));
     }
+
+
+   
+
+    
+
+    
 
     const getTotalcartamount=()=>{
         let totalamount=0;
@@ -48,7 +88,7 @@ const Shopcontextprovider=(props)=>{
         }
  
 
-    const contextvalue={all_products,cartitems,addtocart,removefromcart,getTotalcartamount, getTotalcartitems};
+    const contextvalue={all_products,cartitems,addtocart,removefromcart,getTotalcartamount, getTotalcartitems,addcount,minuscount};
     
     return(
         <Shopcontext.Provider  value={contextvalue}>

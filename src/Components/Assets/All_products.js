@@ -49,6 +49,7 @@ let all_products=[
         image:k1,
         new_price:50.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:14,
@@ -57,6 +58,7 @@ let all_products=[
         image:k2,
         new_price:100.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:15,
@@ -65,6 +67,7 @@ let all_products=[
         image:k3,
         new_price:180.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:16,
@@ -73,6 +76,7 @@ let all_products=[
         image:k4,
         new_price:60.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:17,
@@ -81,6 +85,7 @@ let all_products=[
         image:k5,
         new_price:40.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:18,
@@ -89,6 +94,7 @@ let all_products=[
         image:k6,
         new_price:550.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:19,
@@ -97,6 +103,7 @@ let all_products=[
         image:k7,
         new_price:250.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:20,
@@ -105,6 +112,7 @@ let all_products=[
         image:k8,
         new_price:150.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:21,
@@ -113,6 +121,7 @@ let all_products=[
         image:k9,
         new_price:350.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:22,
@@ -121,6 +130,7 @@ let all_products=[
         image:k10,
         new_price:576.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:23,
@@ -129,6 +139,7 @@ let all_products=[
         image:k11,
         new_price:570.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:24,
@@ -137,6 +148,7 @@ let all_products=[
         image:k12,
         new_price:300.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:1,
@@ -145,6 +157,7 @@ let all_products=[
         image:p1_img,
         new_price:380.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:2,
@@ -153,6 +166,7 @@ let all_products=[
         image:p2_img,
         new_price:50.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:3,
@@ -161,6 +175,7 @@ let all_products=[
         image:p3_img,
         new_price:500.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:4,
@@ -169,6 +184,7 @@ let all_products=[
         image:p4_img,
         new_price:57.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:5,
@@ -177,6 +193,7 @@ let all_products=[
         image:w5,
         new_price:560.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:6,
@@ -185,6 +202,7 @@ let all_products=[
         image:w6,
         new_price:540.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:7,
@@ -193,6 +211,7 @@ let all_products=[
         image:w7,
         new_price:200.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:8,
@@ -201,6 +220,7 @@ let all_products=[
         image:w8,
         new_price:375.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:9,
@@ -209,6 +229,7 @@ let all_products=[
         image:w9,
         new_price:520.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:10,
@@ -217,6 +238,7 @@ let all_products=[
         image:w10,
         new_price:755.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:11,
@@ -225,6 +247,7 @@ let all_products=[
         image:w11,
         new_price:510.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:12,
@@ -233,6 +256,7 @@ let all_products=[
         image:w12,
         new_price:590.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:25,
@@ -241,6 +265,7 @@ let all_products=[
         image:c5,
         new_price:520.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:26,
@@ -249,6 +274,7 @@ let all_products=[
         image:c6,
         new_price:530.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:27,
@@ -257,6 +283,7 @@ let all_products=[
         image:c5,
         new_price:510.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:28,
@@ -265,6 +292,7 @@ let all_products=[
         image:c6,
         new_price:570.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:29,
@@ -273,6 +301,7 @@ let all_products=[
         image:c5,
         new_price:550.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:30,
@@ -281,6 +310,7 @@ let all_products=[
         image:c6,
         new_price:750.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:31,
@@ -289,6 +319,7 @@ let all_products=[
         image:c5,
         new_price:800.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:32,
@@ -297,6 +328,7 @@ let all_products=[
         image:c6,
         new_price:650.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:33,
@@ -305,6 +337,7 @@ let all_products=[
         image:c5,
         new_price:750.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:34,
@@ -313,6 +346,7 @@ let all_products=[
         image:c6,
         new_price:290.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:35,
@@ -321,6 +355,7 @@ let all_products=[
         image:c5,
         new_price:100.00,
         old_price:80.50,
+        quantity:1,
     },
     {
         id:36,
@@ -329,6 +364,7 @@ let all_products=[
         image:c6,
         new_price:1000.00,
         old_price:80.50,
+        quantity:1,
     },
 
 

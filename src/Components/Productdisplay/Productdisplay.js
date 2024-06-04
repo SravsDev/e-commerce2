@@ -5,8 +5,16 @@ import stardullicon from "../Assets/stardullicon.png"
 import { Shopcontext } from '../../Content/Shopcontext'
 
 const Productdisplay = (props) => {
+ 
     const {product}=props;
     const {addtocart}=useContext(Shopcontext);
+
+    
+
+
+
+
+
   return (
     <div className="productdisplay">
         <div className='productdisplay-left'>
@@ -43,8 +51,7 @@ const Productdisplay = (props) => {
             <div className="productdisplay-right-description">A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves,worn as an undershirt or outer garment
             </div>
             <div className="productdisplay-right-size">
-            <h1>Select Size</h1>
-            <div className="productdisplay-right-sizes">
+              <div className="productdisplay-right-sizes">
                 <div>S</div>
                 <div>M</div>
                 <div>L</div>
