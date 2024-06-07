@@ -10,7 +10,7 @@ import Product from "./Pages/Product";
 import Footer from "./Components/Footer/Footer"
 import men_banner from "./Components/Assets/men_banner.png"
 import women_banner from "./Components/Assets/women_banner.png"
-import kids_banner from "./Components/Assets/kids_banner.png"
+import banner3 from "./Components/Assets/banner3.png"
 
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
       <Route   path="/" element={<Shop/>}/>
       <Route   path="/Mens" element={<Shopcategory  banner={men_banner} category="mens"/>}/>
       <Route   path="/Womens" element={<Shopcategory  banner={women_banner}category="womens"/>}/>
-      <Route   path="/Kids" element={<Shopcategory   banner={kids_banner}category="kids"/>}/>
+      <Route   path="/Kids" element={<Shopcategory   banner={banner3}category="kids"/>}/>
       <Route   path="/Cart" element={<Cart/>}/>
       <Route   path="/Signup" element={<Signup/>}/>
       <Route   path="/Signin" element={<Signin/>}/>

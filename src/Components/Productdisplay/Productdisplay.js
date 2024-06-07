@@ -5,6 +5,7 @@ import stardullicon from "../Assets/stardullicon.png"
 import { Shopcontext } from '../../Content/Shopcontext'
 
 const Productdisplay = (props) => {
+   
  
     const {product}=props;
     const {addtocart}=useContext(Shopcontext);
@@ -12,9 +13,7 @@ const Productdisplay = (props) => {
     
 
 
-
-
-
+    
   return (
     <div className="productdisplay">
         <div className='productdisplay-left'>
@@ -52,11 +51,17 @@ const Productdisplay = (props) => {
             </div>
             <div className="productdisplay-right-size">
               <div className="productdisplay-right-sizes">
+                
                 <div>S</div>
+                
+                
                 <div>M</div>
                 <div>L</div>
                 <div>XL</div>
                 <div>XXL</div>
+                
+
+
 
             </div>
         </div>

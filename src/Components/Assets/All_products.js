@@ -341,7 +341,7 @@ let all_products=[
     },
     {
         id:34,
-        name:"Mens Office Fashion World",
+        name:" Office Fashion World of mens",
         category:"mens",
         image:c6,
         new_price:290.00,
@@ -350,7 +350,7 @@ let all_products=[
     },
     {
         id:35,
-        name:"Mens Casual Fashion World",
+        name:"Casual Fashion World of Mens",
         category:"mens",
         image:c5,
         new_price:100.00,
@@ -359,7 +359,7 @@ let all_products=[
     },
     {
         id:36,
-        name:"Mens Fashion World",
+        name:" Fashion World of Men",
         category:"mens",
         image:c6,
         new_price:1000.00,

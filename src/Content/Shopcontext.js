@@ -19,39 +19,6 @@ const Shopcontextprovider=(props)=>{
     const addtocart=(itemsid)=>{
         setCartitems((prev)=>({...prev,[itemsid]:prev[itemsid]? prev[itemsid] : prev[itemsid]+1}))
     }
-    
-    
-    
-
-    const addcount=(itemsid)=>{
-        setCartitems((prev)=>({...prev, [itemsid]:prev[itemsid]+1}))
-       
-    }
-
-
-
-    const minuscount=(itemsid)=>{
-            setCartitems((prev)=>({...prev, [itemsid]:prev[itemsid]>1 ? prev[itemsid]-1 : 1 } ))
-           
-         }
-
-
-
-    // const minuscount=(itemsid)=>{
-    //     setCartitems((prev)=>({...prev, [itemsid]:{ [itemsid]:prev[itemsid] > 0 ?prev[itemsid]-1 : 0} } ))
-       
-    // }
-    
-    
-    // const minuscount=(itemsid)=>{
-    //     const count=cartitems.map((item.index)=>{
-
-    //         return [itemsid]===index?{...item, quantity:item.quantity>0?item.quantity-1:0} :item
-    //     })
-    //     setCartitems(count);
-
-    // }
-
 
 
     const removefromcart=(itemsid)=>{
@@ -59,14 +26,30 @@ const Shopcontextprovider=(props)=>{
         setCartitems((prev)=>({...prev, [itemsid]:prev[itemsid]===""}));
     }
 
-
-   
-
     
+     const addcount=(itemsid)=>{
+        setCartitems((prev)=>({...prev, [itemsid]:prev[itemsid]+1}))
+       
+    }
+    const minuscount=(itemsid)=>{
+            setCartitems((prev)=>({...prev, [itemsid]:prev[itemsid]>1 ? prev[itemsid]-1 : 1 } ))
+           
+         }
 
-    
 
-    const getTotalcartamount=()=>{
+
+
+
+    //  const addcount=(quantity)=>{
+    //     setCartitems((prev)=>({...prev, quantity:prev[quantity]+1}))
+    //  }
+
+    //  const minuscount=(quantity)=>{
+    //     setCartitems((prev)=>({...prev, quantity:prev[quantity]>1 ? prev[quantity]-1 : 1}))
+    //  }
+
+
+ const getTotalcartamount=()=>{
         let totalamount=0;
         for(const item in cartitems){
             if(cartitems[item]>0){

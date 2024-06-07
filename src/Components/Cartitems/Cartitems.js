@@ -4,16 +4,16 @@ import { Shopcontext } from '../../Content/Shopcontext'
 import removeicon from "../Assets/removeicon.png"
 
 const Cartitems = () => {
-    const {all_products,cartitems, removefromcart,getTotalcartamount,addcount,minuscount}=useContext(Shopcontext)
+    
+    const {all_products,cartitems, removefromcart,getTotalcartamount,addcount,minuscount  }=useContext(Shopcontext);
+   
 
- 
-
-  return (
+    
+return (
     <div className="cartitems">
-        <div className="cartitems-format-main">
+        <div className="cartitems-format-main">   
             <p>Products</p>
-            <p>Title</p>
-            <p>Price</p>
+            <p>name</p>
             <p>Quantity</p>
             <p>Total</p>
             <p>Remove</p>
@@ -28,13 +28,13 @@ const Cartitems = () => {
             <img className="carticon-producticon" src={e.image} alt="Loading" />
             <p>{e.name}</p>
             <p>{e.new_price}</p>
-            {/* <button className="cartitems-quantity"><span>+</span>{cartitems[e.id]} <span>-</span></button> */}
+          
             <div className="cartitems-quantity">
-                 <button onClick={()=>{minuscount(e.id)}}>-</button>
+                 <button onClick={()=>{minuscount(e.id)} } >-</button>
 
                 <button>{cartitems[e.id]}</button>
                 
-                <button onClick={()=>{addcount(e.id)}}>+</button>
+                <button onClick={()=>{addcount(e.id)} } > + </button>
             </div>
 
             <p>{e.new_price*cartitems[e.id]}</p>
